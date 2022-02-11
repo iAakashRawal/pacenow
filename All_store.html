@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: #F2F2F2;
+        }
+        .a_cat {
+          height: 52px;
+          position: relative;
+      }
+
+        .a_cat p {
+        font-size: 11px;
+        position: absolute;
+        left: 65px;
+        top: 2px;
+        color: rgb(3, 3, 3);
+      }
+      .fontuser {
+        position: relative;
+      }
+
+      .fontuser i {
+        position: absolute;
+        left: 15px;
+        top: 20px;
+        color: gray;
+      }
+      ::placeholder {
+        padding-left: 20px;
+      }
+    </style>
+    <title>pace</title>
+</head>
+<body>
+    <div class="container a_main ">
+        <div class="">
+            <h1 class="fw-bolder">store</h1>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/banner.png" class="d-block w-100 overlay" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/banner.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/banner.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="row m-0 mt-5 ">
+            <div class="col-2 fs-3 ">
+              <a href="pace.html" class="text-dark text-decoration-none "> Recommended</a>
+            </div>
+            <div class="col-10 fs-3 ">
+             <a href="All_store.html" class="text-dark text-decoration-none fw-bold border-bottom border-4 border-dark">All Stores</a> 
+            </div>
+        </div>
+        <div class="row m-0 ">
+            <div class="col-8 p-0  fontuser">
+                <div class="mb-3 mt-3 ">   
+          <div class="a_cat">
+                    <input type="email" class="form-control h-100 " id="email" placeholder="Enter email" name="email">
+                    <i class="fas fa-search"></i>
+                  </div>                                
+                </div>
+            </div>
+            <div class="col-2 p-0 ">
+                <div class="dropdown mb-3 mt-3 a_cat">
+                    <button class="btn dropdown-toggle bg-transparent w-75 border border-secondary ms-auto d-block a_cat " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      All Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    <p class="fw-light">Category</p> 
+                  </div>
+            </div>
+            <div class="col-2 p-0 ">
+                <div class="dropdown mb-3 mt-3 a_cat ">
+                    <button class="btn dropdown-toggle bg-transparent border border-secondary ms-auto d-block w-75 a_cat" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      All
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    <p class="fw-light">Filter by</p> 
+                  </div>
+            </div>
+        </div>
+        <div class="row bg-white m-0 mt-5">
+            <div class="col-1">
+                <img src="img/logo_40x40.png" class="img-thumbnail img-fluid rounded-circle" alt="...">
+            </div>
+            <div class="col-9 position-relative">
+                <h3 class="fw-normal">1 2 Cycle</h3> 
+                <button class="btn border instore">In Store</button>
+            </div>
+            <div class="col-2 mt-3 text-center">
+                <a href="" class="text-dark text-decoration-none fs-5 fw-bold ">Location</a>
+            </div>
+        </div>
+        <div class="row bg-white mt-5">
+            <div class="col-1">A</div>
+            <div class="col-10">B</div>
+            <div class="col-1">C</div>
+        </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: #F2F2F2;
+    }
+
+    .a_cat {
+      height: 52px;
+      position: relative;
+    }
+
+    .nav-tabs .active {
+      background-color: transparent !important;
+      font-weight: 700 !important;
+      border: none !important;
+      border-bottom: 5px solid #006aff !important;
+    }
+
+    .fnt {
+      color: #006aff !important;
+    }
+
+    .a_cat p {
+      font-size: 11px;
+      position: absolute;
+      left: 65px;
+      top: 2px;
+      color: rgb(3, 3, 3);
+    }
+
+    .fontuser {
+      position: relative;
+    }
+
+    .fontuser i {
+      position: absolute;
+      left: 15px;
+      top: 20px;
+      color: gray;
+    }
+
+    input {
+      background-color: transparent !important;
+      border: 1px solid !important;
+    }
+
+    ::placeholder {
+      padding-left: 30px;
+    }
+
+    .ovrly {
+      top: 0px;
+      width: 295px;
+      height: 295px;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .ovrly:hover {
+      background: none;
+    }
+
+    .a_img {
+      z-index: -1;
+    }
+
+    .g_img {
+      width: 295px;
+      height: 295;
+    }
+
+    .instore {
+      top: 0px;
+      margin-top: 250px !important;
+      margin-left: 15px !important;
+    }
+  </style>
+  <title>pace</title>
+</head>
+
+<body>
+  <div class="container a_main ">
+    <div class="">
+      <h1 class="fw-bolder">store</h1>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner.png" class="d-block w-100 overlay" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/banner.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="row m-0 mt-5 ">
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a data-bs-toggle="tab" href="#home" class=" nav-link text-dark text-decoration-none fnt border-0 fs-2 ">
+            Recommended</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark text-decoration-none border-0 fs-2 fnt" data-bs-toggle="tab" href="#menu1"">All Stores</a> 
+            </li>          
+          </ul>
+        </div>
+
+        <!-- Tab panes -->
+      <div class=" tab-content">
+            <div id="home" class="container tab-pane active"><br>
+              <div class="row m-0 ">
+                <div class="col-3 p-0 ">
+                  <div class="dropdown mb-3 mt-3 a_cat">
+                    <button
+                      class="btn dropdown-toggle bg-transparent w-75 border border-secondary ms-auto d-block a_cat "
+                      type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      All Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+               
+                <div class="col-3 p-0 ">
+                  <div class="dropdown mb-3 mt-3 a_cat">
+                    <button
+                      class="btn dropdown-toggle bg-transparent w-75 border border-secondary ms-auto d-block a_cat "
+                      type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      All Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+               
+                <div class="col-3 p-0 ">
+                  <div class="dropdown mb-3 mt-3 a_cat">
+                    <button
+                      class="btn dropdown-toggle bg-transparent  border border-secondary ms-auto d-block a_cat "
+                      type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      All Categories
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                </div>
+               
+                <div class="col-3 ps-5 pe-5  fontuser">
+                  <div class="mb-3 mt-3 ">
+                    <div class="a_cat">
+                      <input type="email" class="form-control h-100 " id="email" placeholder="Enter email" name="email">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row m-0 mt-5 ">
+                <div class="col-3 position-relative ">
+                  <div class="ovrly ">
+                    <a href="" class="d-block ">
+                      <img src="img/1st.png" class="rounded a_img position-absolute g_img " alt="...">
+                    </a>
+                  </div>
+                  <span class="badge bg-light text-dark position-absolute top-0 ms-3 mt-3"> <i class="fa fa-tag"></i>
+                    Light</span>
+                  <span class="badge bg-light text-dark position-absolute instore"> IN Store</span>
+                  <p class="fs-3 fw-bold text-center fnt">strip</p>
+                </div>
+                <div class="col-3 position-relative ">
+                  <div class="ovrly ">
+                    <a href="" class="d-block ">
+                      <img src="img/1st.png" class="rounded a_img position-absolute g_img " alt="...">
+                    </a>
+                  </div>
+                  <span class="badge bg-light text-dark position-absolute top-0 ms-3 mt-3"> <i class="fa fa-tag"></i>
+                    Light</span>
+                  <span class="badge bg-light text-dark position-absolute instore"> IN Store</span>
+                  <p class="fs-3 fw-bold text-center fnt">strip</p>
+                </div>
+                <div class="col-3 position-relative ">
+                  <div class="ovrly ">
+                    <a href="" class="d-block ">
+                      <img src="img/1st.png" class="rounded a_img position-absolute g_img " alt="...">
+                    </a>
+                  </div>
+                  <span class="badge bg-light text-dark position-absolute top-0 ms-3 mt-3"> <i class="fa fa-tag"></i>
+                    Light</span>
+                  <span class="badge bg-light text-dark position-absolute instore"> IN Store</span>
+                  <p class="fs-3 fw-bold text-center fnt">strip</p>
+                </div>
+                <div class="col-3 position-relative ">
+                  <div class="ovrly ">
+                    <a href="" class="d-block ">
+                      <img src="img/1st.png" class="rounded a_img position-absolute g_img " alt="...">
+                    </a>
+                  </div>
+                  <span class="badge bg-light text-dark position-absolute top-0 ms-3 mt-3"> <i class="fa fa-tag"></i>
+                    Light</span>
+                  <span class="badge bg-light text-dark position-absolute instore"> IN Store</span>
+                  <p class="fs-3 fw-bold text-center fnt">strip</p>
+                </div>
+              </div>
+
+              <div id="menu1" class="container tab-pane fade"><br>
+                <div class="row m-0 ">
+                  <div class="col-8 p-0  fontuser">
+                    <div class="mb-3 mt-3 ">
+                      <div class="a_cat">
+                        <input type="email" class="form-control h-100 " id="email" placeholder="Enter email"
+                          name="email">
+                        <i class="fas fa-search"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2 p-0 ">
+                    <div class="dropdown mb-3 mt-3 a_cat">
+                      <button
+                        class="btn dropdown-toggle bg-transparent w-75 border border-secondary ms-auto d-block a_cat "
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        All Categories
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                      <p class="fw-light">Category</p>
+                    </div>
+                  </div>
+                  <div class="col-2 p-0 ">
+                    <div class="dropdown mb-3 mt-3 a_cat ">
+                      <button
+                        class="btn dropdown-toggle bg-transparent border border-secondary ms-auto d-block w-75 a_cat"
+                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        All
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      </ul>
+                      <p class="fw-light">Filter by</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row bg-white m-0 mt-5">
+                  <div class="col-1">
+                    <img src="img/logo_40x40.png" class="img-thumbnail img-fluid rounded-circle" alt="...">
+                  </div>
+                  <div class="col-9 position-relative">
+                    <h3 class="fw-normal">1 2 Cycle</h3>
+                    <button class="btn border instore">In Store</button>
+                  </div>
+                  <div class="col-2 mt-3 text-center">
+                    <a href="" class="text-dark text-decoration-none fs-5 fw-bold ">Location</a>
+                  </div>
+                </div>
+                <div class="row bg-white mt-5">
+                  <div class="col-1">A</div>
+                  <div class="col-10">B</div>
+                  <div class="col-1">C</div>
+                </div>
+              </div>
+            </div>
+
+
+    </div>
+  </div>
+</body>
+
+</html>
